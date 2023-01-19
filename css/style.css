@@ -47,6 +47,9 @@ ul.nav-list li {
 .nav-links {
     text-decoration: none;
     color: var(--color-linksNav);
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .nav-links:hover {
@@ -118,6 +121,9 @@ ul.nav-list li {
     background-color: var(--color-background);
     border: #E06733 solid 2px;
     border-radius: 10px;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
     
 }  
 
@@ -216,7 +222,10 @@ div.service-buttons>button {
     font-size: 20px;
     font-weight: 400;
     color: var(--color-orange);
-    margin-left: 38px;  
+    margin-left: 38px;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease;   
     
 }
 
@@ -338,6 +347,7 @@ div.service-buttons>button:hover {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer; 
+    
 }
 
 .price-element {
@@ -398,6 +408,9 @@ div.service-buttons>button:hover {
     color: var(--color-orange);
     margin-left: 38px; 
     background-color: #FFFFFF; 
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .contact-us-price-btn:hover {
@@ -494,11 +507,14 @@ div.service-buttons>button:hover {
     text-decoration: none;
     color: #000000;
     margin-left: 15px;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .git-link:hover {
     transition: 0.5s;
-    color: var(--color-green);
+    color: var(--color-orange);
 }
 
 .year {
@@ -529,10 +545,79 @@ div.service-buttons>button:hover {
 .rs-link {
     text-decoration: none;
     color: #000000;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .rs-link:hover {
     transition: 0.5s;
-    color: var(--color-green);
+    color: var(--color-orange);
 }
 
+
+@media (max-width: 768px) {
+  
+    .header {
+        max-width: 768px;
+        height: 117px;
+    }
+
+    .logo {
+        margin-left: 49px;
+        margin-bottom: 55px;
+    }
+    
+    .nav-list {
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    .welcome {
+        max-width: 768px;
+        max-height: 420px;
+    }
+
+    .welcome-text-block {
+        order: 1;
+        margin-top: 17px;
+        margin-left: 50px;
+    }
+
+    .welcome-header {
+        width: 341px;
+        height: 101px;
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .welcome-paragraph {
+        width: 341px;
+        margin-top: -13px;
+        margin-left: 3px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .welcome-button {
+        margin-top: -13px;
+    }
+
+    .img-leafs {
+        width: 280px;
+        height: 254px;
+        margin-left: -190px;
+        margin-top: 40px;
+        order: 2;
+        width: 50%;
+    }
+
+    .img-leafs-1 {
+        width: 280px;
+        height: 254px;
+    }
+
+    .about {
+        background-color: green;
+    }
+}    
