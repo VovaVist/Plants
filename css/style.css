@@ -244,7 +244,6 @@ div.service-buttons>button:hover {
 .section-content {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .section-image {
@@ -618,6 +617,126 @@ div.service-buttons>button:hover {
     }
 
     .about {
-        background-color: green;
+        max-width: 768px;
+        height: 783px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-header {
+        font-size: 35px;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .about-text-block {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .about-paragraph {
+        width: 668px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: -32px;
+        margin-top: 50px;
+    }
+
+    .img-houseplant1 {
+        margin-top: -85px;
+        margin-left: 320px;
+    }
+
+    .houseplant-img {
+        width: 250px;
+        height: 258px;
+    }
+
+    .service {
+        width: 768px;
+        height: 1780px;
+    }
+
+    .service-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-title {
+        font-size: 35px;
+        line-height: 45px;
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+
+    .service-buttons {
+        margin-top: 10px;
+        margin-left: 14px;
+    }
+
+    .service-button {
+        margin-right: -170px;
+    }
+
+    .service-image {
+        width: 280px;
+        height: 350px;
+    }
+
+    .section-paragraph {
+        text-align: center;
+        width: 201px;
+        margin-left: 39px;
+        margin-top: -4px;
+        line-height: 20px;
+    }
+
+    .section-content {
+        display: flex;
+    }
+
+    .section-border {
+        height: 98px;
+    }
+
+    .service-first-section {
+        display: flex;
+        margin-left: -60px;
+        margin-top: -15px;
+
+    }
+
+    .service-second-section {
+        display: flex;
+        margin-left: -70px;
+        margin-top: -20px;
+    }
+
+    .service-third-section {
+        display: flex;
+        margin-left: -70px;
+        margin-top: -30px;
+    }
+
+    .section-image-4 {
+        margin-top: 55px;
+    }
+
+    .section-image-2 {
+        margin-left: 108px;
+    }
+
+    .section-image-3 {
+        margin-left: 120px;
+    }
+
+    .section-image-5 {
+        margin-left: 120px;
+    }
+
+    .section-image-6 {
+        margin-left: 110px;
     }
 }    
+
