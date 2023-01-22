@@ -13,7 +13,6 @@ html {
 
 .body {
     width: 1440px;
-    min-width: 1440px;
     height: 3870px;
     background-color: var(--color-background);
     margin: auto;
@@ -558,12 +557,11 @@ div.service-buttons>button:hover {
 @media (max-width: 768px) {
     
     .body {
-        width: 768px;
-        overflow-x: hidden;
+        width: 100%;
     }
 
     .header {
-        max-width: 768px;
+        max-width: 100%;
         height: 117px;
     }
 
@@ -578,7 +576,7 @@ div.service-buttons>button:hover {
     }
 
     .welcome {
-        max-width: 768px;
+        max-width: 100%;
         max-height: 420px;
     }
 
@@ -622,7 +620,7 @@ div.service-buttons>button:hover {
     }
 
     .about {
-        max-width: 768px;
+        max-width: 100%;
         height: 783px;
 
         display: flex;
@@ -660,7 +658,7 @@ div.service-buttons>button:hover {
     }
 
     .service {
-        width: 768px;
+        width: 100%;
         height: 1780px;
     }
 
@@ -679,10 +677,6 @@ div.service-buttons>button:hover {
     .service-buttons {
         margin-top: 10px;
         margin-left: 14px;
-    }
-
-    .service-button {
-        margin-right: -170px;
     }
 
     .service-image {
@@ -746,7 +740,7 @@ div.service-buttons>button:hover {
     }
 
     .prices {
-        max-width: 768px;
+        max-width: 100%;
         height: 585px;
         display: flex;
         flex-direction: column;
@@ -786,7 +780,7 @@ div.service-buttons>button:hover {
     }
 
     .contacts {
-        max-width: 768px;
+        max-width: 100%;
         height: 739px;
         display: flex;
         flex-direction: column-reverse;
@@ -815,7 +809,7 @@ div.service-buttons>button:hover {
     }
 
     .footer {
-        max-width: 768px;
+        max-width: 100%;
         height: 181px;
         display: flex;
         flex-direction: column;
@@ -836,5 +830,321 @@ div.service-buttons>button:hover {
         margin-top: -20px;
     }
 }    
+
+
+@media (max-width: 380px) {
+
+    .body {
+        width: 100%;
+    }
+   
+    .header {
+        height: 96px;
+        background-color: pink;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .welcome {
+        height: 300px;
+    }
+
+    .welcome-header {
+        font-size: 25px;
+        line-height: 35px;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+
+    .img-leafs {
+        display: none;
+    }
+
+    .welcome-button {
+        width: 100px;
+        height: 34px;
+        padding-bottom: 5px;
+        margin-left: -25px;
+        display: block;
+        margin-top: -22px;
+    }
+
+    .welcome-btn-text {
+        font-size: 10px;
+    }
+
+    .welcome-paragraph {
+        line-height: 25px;
+        margin-top: -55px;
+        margin-left: -25px;
+    }
+
+    .about {
+        height: 516px;
+    }
+
+    .about-text-block {
+        width: 100%;
+    }
+
+    .about-header {
+        width: 100%;
+    }
+
+    .img-houseplant1 {
+        margin-top: -169px;
+        margin-right: 90px;
+        width: 100%
+    }
+
+    .houseplant-img {
+        width: 150px;
+        height: 147px;
+    }
+
+    .about-header {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .about-paragraph {
+        width: 330px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: -25px;
+        margin-left: 25px;
+    }
+
+    .service-title{
+        font-size: 25px;
+        line-height: 33px;
+        width: 187px;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    .service {
+        height: 3150px;
+    }
+
+
+    .section-image {
+        width: 100%;
+        margin-right: auto;
+        margin-top: 34px;
+        
+    }
+
+    .section-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .service-first-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .service-second-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .service-third-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    div.service-buttons>button {
+        width: 121px;
+        height: 35px;
+    }
+
+    div.service-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #service-buttons {
+        margin-left: -13px;
+        margin-top: -10px;
+        width: 100%;
+    }
+
+    #service-button-1 {
+        margin-bottom: 9px;
+    }
+
+    #service-button-2 {
+        margin-left: 10px;
+    }
+
+    #srv-button-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .section-image-1 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-2 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-3 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-4 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-5 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-6 {
+        margin: 0;
+        margin-left: 51px;
+    }
+
+    .section-border {
+        width: 279px;
+        height: 100px;
+    }
+
+    .prices {
+        display: flex;
+        height: 512px;
+
+    }
+
+    .tariff {
+        width: 224px;
+        height: 235px;
+        margin-left: 139px;
+        margin-top: 14px;
+    }
+
+    .price-element {
+        width: 180px;
+        height: 50px;
+        margin-bottom: 13px;
+    }
+    
+    .price-content-2 {
+        margin-top: 322px;
+        margin-left: -380px;
+        width: 100%;
+    }
+
+    .price-title {
+        font-size: 25px;
+        margin-left: 213px;
+        margin-top: 25px;
+    }
+
+    .price-title-2 {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        width: 230px;
+    }
+
+    .leafs-prices {
+        display: none;
+    }
+
+    #btn-contact {
+        width: 121px;
+        height: 35px;
+    }
+
+    .contact-us-price-btn {
+        width: 121px;
+        height: 35px;
+        margin-left: -175px;
+        margin-top: -7px;
+    }
+
+    .cntct-btn-text {
+        font-size: 15px;
+    }
+
+    .price-element-text {
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: -2px;
+    }
+
+    .all-elements {
+        margin-left: 22px;
+        margin-top: 29px;
+    }
+
+    .contact-title {
+        font-size: 25px;
+
+    }
+
+    .choose-city {
+        width: 300px;
+        height: 50px;
+        margin-top: -12px;
+    }
+
+    .contacts  {
+        height: 445px;
+    }
+
+    .contact-woman {
+        width: 100px;
+        height: 124px;
+        margin-left: -3px;
+    }
+
+    .contact-title {
+        margin-top: 25px;
+    }
+
+    .button-contact {
+        margin-right: -14px;
+    }
+
+    .footer {
+        height: 146px;
+    }
+    
+    .year-and-git {
+        margin-top: 21px;
+    }
+
+    .social-networks {
+        margin-top: -30px;
+    }
+
+
+} 
 
 
