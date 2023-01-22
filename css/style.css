@@ -73,6 +73,10 @@ ul.nav-list li {
     background: url(../assets/img/svg/logo_vector.svg) center no-repeat;
 }
 
+.burger-button {
+    display: none;
+}
+
 .welcome {
     display: flex;
     justify-content: space-between;
@@ -560,6 +564,10 @@ div.service-buttons>button:hover {
         width: 100%;
     }
 
+    .burger-button {
+        display: none;
+    }
+
     .header {
         max-width: 100%;
         height: 117px;
@@ -837,10 +845,34 @@ div.service-buttons>button:hover {
     .body {
         width: 100%;
     }
+
+    .logo {
+        margin-left: 23px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-button {
+        display: block;
+        width: 40px;
+        height: 24px;  
+        margin-left: 186px;
+        margin-top: -5px;
+    }
+
+    .burger-btn {
+        width: 40px;
+        height: 29px;
+        background-color: var(--color-background);
+        border: none;
+        
+    }
    
     .header {
         height: 96px;
-        background-color: pink;
     }
 
     .nav-list {
@@ -990,6 +1022,16 @@ div.service-buttons>button:hover {
     }
 
     #srv-button-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #srv-button-text-1 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #srv-button-text-2 {
         font-size: 15px;
         line-height: 20px;
     }
