@@ -56,6 +56,14 @@ ul.nav-list li {
     transition: 1s;
 }
 
+.menu {
+    display: none;
+}
+
+.burger-button {
+    display: none;
+}
+
 .logo {
     font-family: 'Inika', serif;
     font-weight: 400;
@@ -73,9 +81,6 @@ ul.nav-list li {
     background: url(../assets/img/svg/logo_vector.svg) center no-repeat;
 }
 
-.burger-button {
-    display: none;
-}
 
 .welcome {
     display: flex;
@@ -837,6 +842,10 @@ div.service-buttons>button:hover {
         margin-left: 45px;
         margin-top: -20px;
     }
+
+    .menu {
+        display: none;
+    }   
 }    
 
 
@@ -1185,7 +1194,6 @@ div.service-buttons>button:hover {
     .social-networks {
         margin-top: -30px;
     }
-
 
 } 
 
