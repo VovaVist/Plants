@@ -13,7 +13,6 @@ html {
 
 .body {
     width: 1440px;
-    min-width: 1440px;
     height: 3870px;
     background-color: var(--color-background);
     margin: auto;
@@ -47,11 +46,22 @@ ul.nav-list li {
 .nav-links {
     text-decoration: none;
     color: var(--color-linksNav);
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .nav-links:hover {
     color: var(--color-orange);
     transition: 1s;
+}
+
+.menu {
+    display: none;
+}
+
+.burger-button {
+    display: none;
 }
 
 .logo {
@@ -70,6 +80,7 @@ ul.nav-list li {
     height: 21px;
     background: url(../assets/img/svg/logo_vector.svg) center no-repeat;
 }
+
 
 .welcome {
     display: flex;
@@ -118,6 +129,9 @@ ul.nav-list li {
     background-color: var(--color-background);
     border: #E06733 solid 2px;
     border-radius: 10px;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
     
 }  
 
@@ -216,7 +230,10 @@ div.service-buttons>button {
     font-size: 20px;
     font-weight: 400;
     color: var(--color-orange);
-    margin-left: 38px;  
+    margin-left: 38px;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease;   
     
 }
 
@@ -235,7 +252,6 @@ div.service-buttons>button:hover {
 .section-content {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .section-image {
@@ -338,6 +354,7 @@ div.service-buttons>button:hover {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer; 
+    
 }
 
 .price-element {
@@ -398,6 +415,9 @@ div.service-buttons>button:hover {
     color: var(--color-orange);
     margin-left: 38px; 
     background-color: #FFFFFF; 
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .contact-us-price-btn:hover {
@@ -494,11 +514,14 @@ div.service-buttons>button:hover {
     text-decoration: none;
     color: #000000;
     margin-left: 15px;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .git-link:hover {
     transition: 0.5s;
-    color: var(--color-green);
+    color: var(--color-orange);
 }
 
 .year {
@@ -529,10 +552,649 @@ div.service-buttons>button:hover {
 .rs-link {
     text-decoration: none;
     color: #000000;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease; 
+    -o-transition: 1s ease; 
 }
 
 .rs-link:hover {
     transition: 0.5s;
-    color: var(--color-green);
+    color: var(--color-orange);
 }
+
+
+@media (max-width: 768px) {
+    
+    .body {
+        width: 100%;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    .header {
+        max-width: 100%;
+        height: 117px;
+    }
+
+    .logo {
+        margin-left: 49px;
+        margin-bottom: 55px;
+    }
+    
+    .nav-list {
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    .welcome {
+        max-width: 100%;
+        max-height: 420px;
+    }
+
+    .welcome-text-block {
+        order: 1;
+        margin-top: 17px;
+        margin-left: 50px;
+    }
+
+    .welcome-header {
+        width: 341px;
+        height: 101px;
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .welcome-paragraph {
+        width: 341px;
+        margin-top: -13px;
+        margin-left: 3px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .welcome-button {
+        margin-top: -13px;
+    }
+
+    .img-leafs {
+        width: 280px;
+        height: 254px;
+        margin-left: -190px;
+        margin-top: 40px;
+        order: 2;
+        width: 50%;
+    }
+
+    .img-leafs-1 {
+        width: 280px;
+        height: 254px;
+    }
+
+    .about {
+        max-width: 100%;
+        height: 783px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-header {
+        font-size: 35px;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .about-text-block {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .about-paragraph {
+        width: 668px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: -32px;
+        margin-top: 50px;
+    }
+
+    .img-houseplant1 {
+        margin-top: -85px;
+        margin-left: 320px;
+    }
+
+    .houseplant-img {
+        width: 250px;
+        height: 258px;
+    }
+
+    .service {
+        width: 100%;
+        height: 1780px;
+    }
+
+    .service-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-title {
+        font-size: 35px;
+        line-height: 45px;
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+
+    .service-buttons {
+        margin-top: 10px;
+        margin-left: 14px;
+    }
+
+    .service-image {
+        width: 280px;
+        height: 350px;
+    }
+
+    .section-paragraph {
+        text-align: center;
+        width: 201px;
+        margin-left: 39px;
+        margin-top: -4px;
+        line-height: 20px;
+    }
+
+    .section-content {
+        display: flex;
+    }
+
+    .section-border {
+        height: 98px;
+    }
+
+    .service-first-section {
+        display: flex;
+        margin-left: -60px;
+        margin-top: -15px;
+
+    }
+
+    .service-second-section {
+        display: flex;
+        margin-left: -70px;
+        margin-top: -20px;
+    }
+
+    .service-third-section {
+        display: flex;
+        margin-left: -70px;
+        margin-top: -30px;
+    }
+
+    .section-image-4 {
+        margin-top: 55px;
+    }
+
+    .section-image-2 {
+        margin-left: 108px;
+    }
+
+    .section-image-3 {
+        margin-left: 120px;
+    }
+
+    .section-image-5 {
+        margin-left: 120px;
+    }
+
+    .section-image-6 {
+        margin-left: 110px;
+    }
+
+    .prices {
+        max-width: 100%;
+        height: 585px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .price-title {
+        font-size: 35px;
+        margin-left: 125px;
+    }
+
+    .price-title-2 {
+        font-size: 25px;
+        width: 296px;
+        line-height: 35px;
+    }
+
+    .prices-content {
+        margin-left: -60px;
+    }
+    
+    .price-content-2 {
+        margin-left: -85px;
+        margin-top: 100px;
+    }
+
+    .tariff {
+        margin-top: 23px;
+    }
+
+    .contact-us-btn {
+        margin-top: -25px;
+        margin-right: 2px;
+    }
+
+    .leafs-prices {
+        margin-top: -10px;
+    }
+
+    .contacts {
+        max-width: 100%;
+        height: 739px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contact-woman {
+        width: 200px;
+        height: 249px;
+        margin-left: 18px;
+    }
+
+    .contact-image {
+        margin-bottom: -4px;
+    }
+
+    .contact-title {
+        order: 1;
+        margin-top: 43px;
+        margin-left: 0;
+    }
+
+    .choose-city {
+       margin-top: -123px;
+       margin-left: 105px;
+    }
+
+    .footer {
+        max-width: 100%;
+        height: 181px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .year-and-git {
+        margin-left: -4px;
+        margin-top: 34px;
+    }
+
+    .footer-paragraph {
+        margin-left: -1px;
+        margin-top: 17px;
+    }
+
+    .social-networks {
+        margin-left: 45px;
+        margin-top: -20px;
+    }
+
+    .menu {
+        display: none;
+    }   
+}    
+
+
+@media (max-width: 380px) {
+
+    .body {
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 23px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-button {
+        display: block;
+        width: 40px;
+        height: 24px;  
+        margin-left: 186px;
+        margin-top: -5px;
+    }
+
+    .burger-btn {
+        width: 40px;
+        height: 29px;
+        background-color: var(--color-background);
+        border: none;
+        
+    }
+   
+    .header {
+        height: 96px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .welcome {
+        height: 300px;
+    }
+
+    .welcome-header {
+        font-size: 25px;
+        line-height: 35px;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+
+    .img-leafs {
+        display: none;
+    }
+
+    .welcome-button {
+        width: 100px;
+        height: 34px;
+        padding-bottom: 5px;
+        margin-left: -25px;
+        display: block;
+        margin-top: -22px;
+    }
+
+    .welcome-btn-text {
+        font-size: 10px;
+    }
+
+    .welcome-paragraph {
+        line-height: 25px;
+        margin-top: -55px;
+        margin-left: -25px;
+    }
+
+    .about {
+        height: 516px;
+    }
+
+    .about-text-block {
+        width: 100%;
+    }
+
+    .about-header {
+        width: 100%;
+    }
+
+    .img-houseplant1 {
+        margin-top: -169px;
+        margin-right: 90px;
+        width: 100%
+    }
+
+    .houseplant-img {
+        width: 150px;
+        height: 147px;
+    }
+
+    .about-header {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .about-paragraph {
+        width: 330px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: -25px;
+        margin-left: 25px;
+    }
+
+    .service-title{
+        font-size: 25px;
+        line-height: 33px;
+        width: 187px;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    .service {
+        height: 3150px;
+    }
+
+
+    .section-image {
+        width: 100%;
+        margin-right: auto;
+        margin-top: 34px;
+        
+    }
+
+    .section-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .service-first-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .service-second-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .service-third-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    div.service-buttons>button {
+        width: 121px;
+        height: 35px;
+    }
+
+    div.service-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #service-buttons {
+        margin-left: -13px;
+        margin-top: -10px;
+        width: 100%;
+    }
+
+    #service-button-1 {
+        margin-bottom: 9px;
+    }
+
+    #service-button-2 {
+        margin-left: 10px;
+    }
+
+    #srv-button-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #srv-button-text-1 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #srv-button-text-2 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .section-image-1 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-2 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-3 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-4 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-5 {
+        margin: 0;
+        margin-bottom: 34px;
+        margin-left: 51px;
+    }
+
+    .section-image-6 {
+        margin: 0;
+        margin-left: 51px;
+    }
+
+    .section-border {
+        width: 279px;
+        height: 100px;
+    }
+
+    .prices {
+        display: flex;
+        height: 512px;
+
+    }
+
+    .tariff {
+        width: 224px;
+        height: 235px;
+        margin-left: 139px;
+        margin-top: 14px;
+    }
+
+    .price-element {
+        width: 180px;
+        height: 50px;
+        margin-bottom: 13px;
+    }
+    
+    .price-content-2 {
+        margin-top: 322px;
+        margin-left: -380px;
+        width: 100%;
+    }
+
+    .price-title {
+        font-size: 25px;
+        margin-left: 213px;
+        margin-top: 25px;
+    }
+
+    .price-title-2 {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        width: 230px;
+    }
+
+    .leafs-prices {
+        display: none;
+    }
+
+    #btn-contact {
+        width: 121px;
+        height: 35px;
+    }
+
+    .contact-us-price-btn {
+        width: 121px;
+        height: 35px;
+        margin-left: -175px;
+        margin-top: -7px;
+    }
+
+    .cntct-btn-text {
+        font-size: 15px;
+    }
+
+    .price-element-text {
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: -2px;
+    }
+
+    .all-elements {
+        margin-left: 22px;
+        margin-top: 29px;
+    }
+
+    .contact-title {
+        font-size: 25px;
+
+    }
+
+    .choose-city {
+        width: 300px;
+        height: 50px;
+        margin-top: -12px;
+    }
+
+    .contacts  {
+        height: 445px;
+    }
+
+    .contact-woman {
+        width: 100px;
+        height: 124px;
+        margin-left: -3px;
+    }
+
+    .contact-title {
+        margin-top: 25px;
+    }
+
+    .button-contact {
+        margin-right: -14px;
+    }
+
+    .footer {
+        height: 146px;
+    }
+    
+    .year-and-git {
+        margin-top: 21px;
+    }
+
+    .social-networks {
+        margin-top: -30px;
+    }
+
+} 
+
 

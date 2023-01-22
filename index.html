@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/img/png/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,11 @@
 <body class="body">
     <header class="header">
             <h3 class="logo">Plants</h3>
+            <div class="burger-button">
+                <button class="burger-btn active">
+                    <img src="assets/img/svg/burger.svg" alt="burger-btn">
+                </button>
+            </div>
             <nav>
                 <ul class="nav-list">
                     <li><a href="#welcome" class="nav-links">Home</a></li>
@@ -30,17 +36,17 @@
     <main class="main">
         <section class="welcome" id="home">  
             <div class="img-leafs">
-                <img src="assets/img/png/leafs.png" alt="leafs">
+                <img src="assets/img/png/leafs.png" alt="leafs" class="img-leafs-1">
             </div>
             <div class="welcome-text-block">
-                <h1 class="welcome-header">We grow <span class="word-plants">plants</span> and give you oxygen</h1>
-                <p class="welcome-paragraph">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard 
-                    dummy text ever since the 1500s.</p>
-                <button type="button" class="welcome-button">Learn more</button>    
+                 <h1 class="welcome-header">We grow <span class="word-plants">plants</span> and give you oxygen</h1>
+                 <p class="welcome-paragraph">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard 
+                        dummy text ever since the 1500s.</p>
+                 <button type="button" class="welcome-button"><span class="welcome-btn-text">Learn more</span></button>    
             </div>
-        </section>
+            </section>
         <section class="about" id="about-us">
             <div class="about-text-block">
                 <h2 class="about-header">We are <span class="highlighted-professional-experienced">professional<br> experienced</span> gardeners</h2>
@@ -55,40 +61,43 @@
                     remaining essentially unchanged.</p>
             </div>
             <div class="img-houseplant1">
-                <img src="assets/img/png/houseplant1.png" alt="plant">
+                <img src="assets/img/png/houseplant1.png" alt="plant" class="houseplant-img">
             </div>
         </section>
         <section class="service" id="service">
             <div class="service-header">
                 <h2 class="service-title">Service and our projects</h2>
-                <div class="service-buttons">
-                    <button>Gardens</button>
-                    <button>Lawn</button>
-                    <button>Planting</button>
+                <div class="service-buttons" id="service-buttons">
+                    <button class="service-button" id="service-button-1"><span id="srv-button-text">Gardens</span></button>
+                    <button class="service-button" id="service-button-2"><span id="srv-button-text-1">Lawn</span></button>
+                    <button class="service-button" id="service-button-3"><span id="srv-button-text-2">Planting</span></button>
                 </div>
             </div>
             <div class="section-content">
+            <div class="service-first-section ">
                 <div class="section-image section-image-1">
                     <div>
-                        <img src="assets/img/png/first.png" alt="image">
+                        <img src="assets/img/png/first.png" alt="image" class="service-image">
                     </div>
-                    <div class="section-border">
+                    <div class="section-border ">
                         <h3 class="section-image-title">Garden care</h3>
                         <p class="section-paragraph">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
                 <div class="section-image section-image-2">
                     <div>
-                        <img src="assets/img/png/first(1).png" alt="image">
+                        <img src="assets/img/png/first(1).png" alt="image" class="service-image">
                     </div>
                     <div class="section-border">
                         <h3 class="section-image-title">Planting</h3>
                         <p class="section-paragraph">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
+            </div>
+            <div class="service-second-section ">
                 <div class="section-image section-image-3">
                     <div>
-                        <img src="assets/img/png/first(2).png" alt="image">
+                        <img src="assets/img/png/first(2).png" alt="image" class="service-image">
                     </div>
                     <div class="section-border">
                         <h3 class="section-image-title">Lawn care</h3>
@@ -97,16 +106,18 @@
                 </div>
                 <div class="section-image section-image-4">
                     <div>
-                        <img src="assets/img/png/first(3).png" alt="image">
+                        <img src="assets/img/png/first(3).png" alt="image" class="service-image">
                     </div>
                     <div class="section-border">
                         <h3 class="section-image-title">Planting</h3>
                         <p class="section-paragraph">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
+            </div>
+            <div class="service-third-section">
                 <div class="section-image section-image-5">
                     <div>
-                        <img src="assets/img/png/first(4).png" alt="image">
+                        <img src="assets/img/png/first(4).png" alt="image" class="service-image">
                     </div>
                     <div class="section-border">
                         <h3 class="section-image-title">Garden care</h3>
@@ -115,13 +126,14 @@
                 </div>
                 <div class="section-image section-image-6">
                     <div>
-                        <img src="assets/img/png/first(5).png" alt="image">
+                        <img src="assets/img/png/first(5).png" alt="image" class="service-image">
                     </div>
                     <div class="section-border">
                         <h3 class="section-image-title">Planting</h3>
                         <p class="section-paragraph">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="prices" id="price">
@@ -147,7 +159,7 @@
             <div class="price-content-2">
                 <h2 class="price-title price-title-2">Our best <span class="gardeners">gardeners</span> are ready to help you</h2>
                 <div class="contact-us-btn">
-                    <button class="contact-us-price-btn">Contact us</button>
+                    <button class="contact-us-price-btn"><span class="cntct-btn-text">Contact us</span></button>
                 </div>
                 <div>
                     <img src="assets/img/png/leafs-prices.png" alt="leafs" class="leafs-prices">
@@ -189,7 +201,6 @@
 </body>
 </html>
 
-<!--Comment-->
 
 
 
