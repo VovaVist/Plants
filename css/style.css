@@ -34,8 +34,6 @@ ul.nav-list li {
     font-size: 16px;
     margin: 42px 0 42px 43px;
     padding: 0;
-    
-
 }
 
 .nav-list {
@@ -54,10 +52,6 @@ ul.nav-list li {
 .nav-links:hover {
     color: var(--color-orange);
     transition: 1s;
-}
-
-.menu {
-    display: none;
 }
 
 .burger-button {
@@ -578,6 +572,7 @@ div.service-buttons>button:hover {
         height: 117px;
     }
 
+
     .logo {
         margin-left: 49px;
         margin-bottom: 55px;
@@ -842,10 +837,6 @@ div.service-buttons>button:hover {
         margin-left: 45px;
         margin-top: -20px;
     }
-
-    .menu {
-        display: none;
-    }   
 }    
 
 
@@ -865,27 +856,58 @@ div.service-buttons>button:hover {
     }
 
     .burger-button {
-        display: block;
         width: 40px;
-        height: 24px;  
-        margin-left: 186px;
-        margin-top: -5px;
+        height: 24px;
+        position: relative;
+        right: 25px;
+        border: none;
+        display: block;
+        z-index: 1;
     }
 
-    .burger-btn {
+    .burger-button span {
+        position: absolute;
+        left: 0px;
         width: 40px;
-        height: 29px;
-        background-color: var(--color-background);
-        border: none;
-        
+        height: 2px;
+        background-color: var(--color-lightGray);
+    }
+
+    .burger-button span:nth-child(1){
+        transform: translateY(-12px);
+    }
+
+    .burger-button span:nth-child(3){
+        transform: translateY(12px);
     }
    
     .header {
         height: 96px;
     }
 
+    .header.open .menu{
+        transform: translateY(100%)
+    }
+
+    .menu {
+        display: inline;
+        position: absolute;
+        width: 30%;
+        right: 0;
+        top: -350px;
+        background-color: var(--color-background);
+        padding: 96px 20px 20px 20px;
+        transition: transform 0.5s;
+    }
+
     .nav-list {
-        display: none;
+        display: block;
+        font-size: 10px;
+        width: 150px    ;
+    }
+
+    .nav-links {
+        display: block;
     }
 
     .welcome {
