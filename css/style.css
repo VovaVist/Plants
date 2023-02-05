@@ -258,21 +258,27 @@ div.service-buttons>button:hover {
 }
 
 .section-image-3 {
-    margin-left: 115px
+    margin-left: 115px;
 }
 
 .section-image-4 {
-    margin-top: 70px;
+    margin-top: 55px;
 }
 
 .section-image-5 {
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: 115px;
 }
 
 .section-image-6 {
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: 115px;
+}
+
+.blur {
+    -webkit-filter: blur(10px);
+    filter: blur(5px);
+    transition: all 0.5s;
 }
 
 .section-image-title {
@@ -360,6 +366,13 @@ div.service-buttons>button:hover {
     height: 50px;
     border-radius: 20px;
     background-color: #EDF2EC;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.price-element-active {
+    border-radius: 20px 20px 0 0;
+    background-color: #D6E7D2;
 }
 
 .price-element-text {
@@ -464,6 +477,7 @@ div.service-buttons>button:hover {
     font-size: 20px;
     color: var(--color-lightGray);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .btn {
@@ -481,6 +495,57 @@ div.service-buttons>button:hover {
 .city {
     padding-left: 20px;
     letter-spacing: 1px;
+}
+
+.cities-content {
+    width: 450px;
+    height: 234px;
+    background-color: #DCE9D9;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.cities-list {
+    list-style: none;
+}
+
+.cities-choose-btn {
+    width: 88%;
+    background-color: #DCE9D9;
+    border: none;
+    cursor: pointer;
+    text-align: start;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.cities-choose-btn:hover {
+    border-bottom: 1px solid var(--color-lightGray);
+    transition: 0.7s;
+}
+
+.cities-list-element-text:hover {
+    color: var(--color-lightGray);
+    transition: 0.5s;
+}
+
+.cities-list-element-text {
+    color: var(--color-green);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.cities-list-element {
+    margin-top: 5px;
+}
+
+.cities-content-active {
+    z-index: 1;
+    visibility: visible;
 }
 
 .button-contact {
@@ -556,6 +621,73 @@ div.service-buttons>button:hover {
     color: var(--color-orange);
 }
 
+.basic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D6E7D2;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: 1;
+    border-radius: 0 0 20px 20px;
+    height: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+.basic-content-active {
+    z-index: 1;
+    visibility: visible;
+}
+
+.price-selected-button {
+    width: 86px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: var(--color-lightGray);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer ;
+
+}
+
+.price-line {
+    width: 163px;
+}
+
+.basic-content-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.basic-content-text {
+    color: var(--color-lightGray);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    width: 169px;
+}
+
+.dollars {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-orange);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.some-price-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
 
 @media (max-width: 768px) {
     
