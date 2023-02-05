@@ -262,16 +262,16 @@ div.service-buttons>button:hover {
 }
 
 .section-image-4 {
-    margin-top: 70px;
+    margin-top: 55px;
 }
 
 .section-image-5 {
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: 115px;
 }
 
 .section-image-6 {
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: 115px;
 }
 
@@ -360,6 +360,13 @@ div.service-buttons>button:hover {
     height: 50px;
     border-radius: 20px;
     background-color: #EDF2EC;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.price-element-active {
+    border-radius: 20px 20px 0 0;
+    background-color: #D6E7D2;
 }
 
 .price-element-text {
@@ -556,6 +563,73 @@ div.service-buttons>button:hover {
     color: var(--color-orange);
 }
 
+.basic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D6E7D2;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: 1;
+    border-radius: 0 0 20px 20px;
+    height: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+.basic-content-active {
+    z-index: 1;
+    visibility: visible;
+}
+
+.price-selected-button {
+    width: 86px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: var(--color-lightGray);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer ;
+
+}
+
+.price-line {
+    width: 163px;
+}
+
+.basic-content-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.basic-content-text {
+    color: var(--color-lightGray);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    width: 169px;
+}
+
+.dollars {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-orange);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.some-price-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
 
 @media (max-width: 768px) {
     
