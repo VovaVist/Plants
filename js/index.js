@@ -89,7 +89,55 @@ priceProCare.addEventListener('click', (event) => {
         document.querySelector('.basic-content-1').classList.remove('basic-content-active');
         document.querySelector('.basic-content-2').classList.remove('basic-content-active');
     }
-   
+});
+
+
+const firstSectionService = document.querySelector('.section-image-1'); // garden care
+const secondSectionService = document.querySelector('.section-image-2'); // planting
+const thirdSectionService = document.querySelector('.section-image-3'); // lawn care
+const fourthSectionService = document.querySelector('.section-image-4'); // planting
+const fifthSectionService = document.querySelector('.section-image-5'); // garden care
+const sixthSectionService = document.querySelector('.section-image-6'); // planting 
+
+const gardensBtn = document.querySelector('#service-button-1');
+const lawnBtn = document.querySelector('#service-button-2');
+const plantingBtn = document.querySelector('#service-button-3');
+
+gardensBtn.addEventListener('click', (event) => {
+    secondSectionService.classList.toggle('blur');
+    thirdSectionService.classList.toggle('blur');
+    fourthSectionService.classList.toggle('blur');
+    sixthSectionService.classList.toggle('blur');
+    gardensBtn.classList.toggle('active-service-btn');
+});
+
+lawnBtn.addEventListener('click', (event) => {
+    firstSectionService.classList.toggle('blur');
+    secondSectionService.classList.toggle('blur');
+    fourthSectionService.classList.toggle('blur');
+    fifthSectionService.classList.toggle('blur');
+    sixthSectionService.classList.toggle('blur');
+});
+
+plantingBtn.addEventListener('click', (event) => {
+    firstSectionService.classList.toggle('blur');
+    thirdSectionService.classList.toggle('blur');
+    fifthSectionService.classList.toggle('blur');
+});
+
+
+const citiesButton = document.getElementById('btn');
+const wrappedCitiesContent = document.querySelector('cities-content-wrap')
+
+citiesButton.addEventListener('click', (event) => {
+    const citiesContentNode =  document.querySelector('cities-content');
+    const heightCitiesContent = citiesContentNode.firstElementChild.offsetHeight;
+    citiesContentNode.style.height = `${heightCitiesContent}px`;
+    citiesContentNode.classList.toggle('cities-content-active');
+
+    if(!citiesContentNode.classList.contains('cities-content-active')) {
+        citiesContentNode.style.height = '0px';
+    }
 });
 
 
