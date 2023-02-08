@@ -126,19 +126,81 @@ plantingBtn.addEventListener('click', (event) => {
 });
 
 
-const citiesButton = document.getElementById('btn');
-const wrappedCitiesContent = document.querySelector('cities-content-wrap')
+
+
+
+const chooseCity = document.querySelector('.choose-city');
+const citiesButton = document.getElementById('btn')
+const wrappedCitiesContent = document.querySelector('.cities-content-wrap');
 
 citiesButton.addEventListener('click', (event) => {
-    const citiesContentNode =  document.querySelector('cities-content');
+    const citiesContentNode =  document.querySelector('.cities-content')
     const heightCitiesContent = citiesContentNode.firstElementChild.offsetHeight;
-    citiesContentNode.style.height = `${heightCitiesContent}px`;
+    citiesContentNode.style.height = `234px`;
     citiesContentNode.classList.toggle('cities-content-active');
+    chooseCity.classList.toggle('choose-city-active');
+    document.querySelector('.city-card').classList.remove('city-card-active');
 
     if(!citiesContentNode.classList.contains('cities-content-active')) {
         citiesContentNode.style.height = '0px';
     }
 });
+
+const canadiguaBtn = document.querySelector('.canadaigua');
+const newYorkBtn = document.querySelector('.new-york');
+const yonkersBtn = document.querySelector('.yonkers');
+const sherillBtn = document.querySelector('.sherill');
+const cityCard = document.querySelector('.city-card');
+const citiesContent = document.querySelector('.cities-content');
+const numberToCall = document.querySelector('.call');
+
+canadiguaBtn.addEventListener('click', (event) => {
+    chooseCity.classList.remove('choose-city-active');
+    cityCard.classList.toggle('city-card-active');
+    citiesContent.classList.remove('cities-content-active');
+    document.querySelector('.column-value-city').innerHTML = 'Canandaigua, NY';
+    document.querySelector('.column-value-phone').innerHTML = '+1	585	393 0001';
+    document.querySelector('.column-value-adress').innerHTML = '151 Charlotte Street';
+    numberToCall.setAttribute('href', 'tel: +1 585 393 0001');
+});
+
+newYorkBtn.addEventListener('click', (event) => {
+    chooseCity.classList.remove('choose-city-active');
+    cityCard.classList.toggle('city-card-active');
+    citiesContent.classList.remove('cities-content-active');
+    document.querySelector('.column-value-city').innerHTML = 'New York City';
+    document.querySelector('.column-value-phone').innerHTML = '+1	212	456 0002';
+    document.querySelector('.column-value-adress').innerHTML = '9 East 91st Street';
+    numberToCall.setAttribute('href', 'tel: +1	212	456 0002');
+});
+
+
+yonkersBtn.addEventListener('click', (event) => {
+    chooseCity.classList.remove('choose-city-active');
+    cityCard.classList.toggle('city-card-active');
+    citiesContent.classList.remove('cities-content-active');
+    document.querySelector('.column-value-city').innerHTML = 'Yonkers, NY';
+    document.querySelector('.column-value-phone').innerHTML = '+1	914	678 0003';
+    document.querySelector('.column-value-adress').innerHTML = '511 Warburton Ave';
+    numberToCall.setAttribute('href', 'tel: +1	914	678 0003');
+});
+
+
+sherillBtn.addEventListener('click', (event) => {
+    chooseCity.classList.remove('choose-city-active');
+    cityCard.classList.toggle('city-card-active');
+    citiesContent.classList.remove('cities-content-active');
+    document.querySelector('.column-value-city').innerHTML = 'Sherrill, NY';
+    document.querySelector('.column-value-phone').innerHTML = '+1	315	908 0004';
+    document.querySelector('.column-value-adress').innerHTML = '14 WEST Noyes BLVD';
+    numberToCall.setAttribute('href', 'tel: +1	315	908 0004');
+});
+
+
+
+
+
+
 
 
 
